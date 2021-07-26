@@ -1,19 +1,27 @@
-import React, { useState } from 'react';
-// import PropTypes from 'prop-types';
-import ChuvaContext from './Context'
+import React, { useState, createContext } from 'react';
+import { node } from 'prop-types';
+
+const ChuvaContext = createContext();
 
 function Provider({ children }) {
-
-  const [newTopic, setTopic] = useState('')
+  const [newTopic, setTopic] = useState('');
+  const [email, setEmail] = useState('');
   const contextValue = {
+    email,
+    setEmail,
     newTopic,
-    setTopic
-  }
+    setTopic,
+  };
 
   return (
-    <ChuvaContext.Provider value={ contextValue }>
+    <ChuvaContext.Provider value={contextValue}>
       {children}
     </ChuvaContext.Provider>
   );
-};
-export default Provider;
+}
+
+Provider.propTypes = {
+  children: node,
+}.isRequired;
+
+export { Provider, ChuvaContext };
