@@ -17,7 +17,6 @@ function Login() {
   return (
     <section className="login-container">
       <h2 className="title">13° Simpósio Latino Americano de Ciência de Alimentos</h2>
-      <i className="fas fa-utensils logo" />
       <h4 className="login-text">Login</h4>
       <div className="buttons">
         <input
@@ -40,7 +39,7 @@ function Login() {
           onChange={(e) => setPasswordInput(e.target.value)}
           className="input-login"
         />
-        <Link to="/comidas">
+        <Link to="/home">
           <button
             type="button"
             data-testid="login-submit-btn"
