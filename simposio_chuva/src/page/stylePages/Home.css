@@ -1,6 +1,8 @@
 .header{
   background: #FDF1EB;
-  display:grid
+  display:grid;
+  width: 1000px;
+  height:68;
 }
 
 #pageTitle{
@@ -10,4 +12,63 @@
 
 #miniTitle{
   color: #725C5C
+}
+
+#language{
+  width: 97px;
+  height: 34px;
+  border-radius: 3px;
+}
+
+#leaveBtn{
+  width:50px;
+}
+
+#welcome{
+  display:flex;
+}
+
+#profilePhoto{
+  display:flex;
+  width:60px;
+  height:50px;
+  border-radius: 100%;
+}
+
+#aside{
+  display:flex;
+  flex-direction: column;
+  position: fixed, absolute;
+  background: #E5E5E5;
+  width: 220px;
+  /* height:2500px; */
+}
+
+#slacaLogo{
+  display:flex;
+  margin-left: -40px;
+  margin-top: -34px;
+  width: 220px;
+  /* height: 258px; */
+}
+
+#asideTitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0px;
+  background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+  color: white;
+  width: 220px;
+  height:60px;
+}
+
+.asideBtn{
+  display:flex;
+  align-items: center;
+  padding-top:-40 px;
+  flex-direction:collumn;
+  width: 220px;
+  height:30px;
+  background:white;
 }

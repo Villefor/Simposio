@@ -2,6 +2,8 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import MainContent from '../components/MainContent';
 import './stylePages/Home.css';
+import logo from '../img/Logo.png';
+import profile from '../img/profile.jpeg';
 // import { ChuvaContext } from '../context/Provider';
 
 function Home() {
@@ -28,28 +30,48 @@ function Home() {
         {/* <label htmlFor="language">Escolha o Idioma:</label> */}
         <select name="language" id="language">
           <option value="Português" selected>PT,BR</option>
-          <option value="Inglês">En</option>
-          <option value="Francês">Fr</option>
-          <option value="Espanhol">Sp</option>
+          <option value="Inglês">EN</option>
+          <option value="Francês">FR</option>
+          <option value="Espanhol">SP</option>
         </select>
 
-        <p>
-          Bem vindo,
-          {' '}
-          { email }
-        </p>
+        <div id="welcome">
+          <p>
+            Bem vindo,
+            {' '}
+            <br />
+            { email }
+          </p>
 
-        <figure>
-          <img src="" alt="Profile" />
-        </figure>
+          <figure>
+            <img src={profile} alt="Profile" id="profilePhoto" />
+          </figure>
+        </div>
 
         <button
+          id="leaveBtn"
           type="button"
           onClick={logoutFunc}
         >
           Sair
         </button>
       </header>
+
+      <aside id="aside">
+        <h1 id="asideTitle">SLACA2019</h1>
+        <figure>
+          <img src={logo} alt="Logo" id="slacaLogo" />
+        </figure>
+        <div>
+          <button type="button" className="asideBtn">Apresentação</button>
+          <button type="button" className="asideBtn">Comitês</button>
+          <button type="button" className="asideBtn">Autores</button>
+          <button type="button" className="asideBtn">Eixos temáticos</button>
+          <button type="button" className="asideBtn">Trabalhos</button>
+          <button type="button" className="asideBtn">Contato</button>
+        </div>
+      </aside>
+
       <MainContent />
     </section>
   );
