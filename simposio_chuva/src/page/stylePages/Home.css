@@ -1,51 +1,109 @@
+#container{
+  display: grid;
+  grid-template-areas:
+  "aside",
+  "header",
+  "main",
+  "resume";
+  grid-template-columns: 25%, 25%, 25%, 25%;
+  grid-template-rows: 25%, 25%, 25%, 25%;
+}
+
+
 .header{
   background: #FDF1EB;
   display:grid;
-  width: 1000px;
-  height:68;
+  grid-area: header;
+  grid-column: 1;
+  grid-row: 1;
+  margin-left: 220px;
+  width: 1146px;
+  height: 70px;
 }
 
 #pageTitle{
   color: #725C5C;
-
+  padding-left: 20px;
+  line-height: 20px;
+  font: 22px 'Roboto';
+  grid-column: 2/4;
+  grid-row:2;
+  margin-top: -17px;
 }
 
 #miniTitle{
-  color: #725C5C
+  color: #725C5C;
+  padding-left: 20px;
+  line-height: 16px;
+  font: 14px 'Roboto';
+  fill: #725C5C;
+  grid-column: 2/4;
+  grid-row:1;
+  margin-top: 10px;
+}
+
+#miniISSN{
+  color: #725C5C;
+  padding-left: 20px;
+  line-height: 16px;
+  font: 14px 'Roboto';
+  grid-column: 2/4;
+  margin-top: -30px;
+}
+
+#globeIcon{
+  grid-column: 3/4;
+  grid-row:2/4;
+  width: 22px;
+  margin-top: -15px;
 }
 
 #language{
+  display: flex;
+  grid-column: 4/5;
+  grid-row:2/4;
   width: 97px;
   height: 34px;
-  border-radius: 3px;
+  border-radius: 10px;
+  margin-top: -23px;
+  text-align-last:center;
 }
 
-#leaveBtn{
+/* #leaveBtn{
   width:50px;
-}
+  height: 30px;
+} */
 
 #welcome{
   display:flex;
+  margin-right: -120px;
+  grid-column: 5/5;
+  grid-row:1/4;
 }
 
 #profilePhoto{
   display:flex;
-  width:60px;
-  height:50px;
+  margin: -10px, 0px, 0px, 0px;
+  margin-right: 100px;
+  width: 60px;
+  height: 50px;
   border-radius: 100%;
 }
 
 #aside{
-  display:flex;
-  flex-direction: column;
-  position: fixed, absolute;
+  grid-area: aside;
+  display:grid;
+  grid-column: 2;
+  grid-row:2;
+  /* flex-direction: column; */
+  position: fixed;
   background: #E5E5E5;
   width: 220px;
   /* height:2500px; */
 }
 
 #slacaLogo{
-  display:flex;
+  display:grid;
   margin-left: -40px;
   margin-top: -34px;
   width: 220px;
@@ -60,7 +118,7 @@
   background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
   color: white;
   width: 220px;
-  height:60px;
+  height:70px;
 }
 
 .asideBtn{
