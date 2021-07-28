@@ -1,14 +1,13 @@
 #commentBox{
-    border: 1px solid black;
     grid-area:resume;
     display: grid;
     /* grid-template-columns: 20%, 20%, 20%, 20%, 20%;
     grid-template-rows: 50px, 50px; */
-    width: 400px;
+    width: 700px;
     height:200px;
     grid-column:1;
-    grid-row:3
-    /* margin-right: 1000px; */
+    grid-row:3;
+    margin-left: 350px
 }
 
 #commentEmail{
@@ -18,4 +17,72 @@
 #commentContainer {
     width:300px;
     height: 70px;
+}
+
+.iconTopic{
+    background: url(../../img/topic.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 160px;
+    height: 48px;
+    border: none;
+    margin:auto
+}
+
+.icons{
+    margin:auto;
+    display:flex;
+    justify-content:space-around;
+    width: 300px;
+
+}
+
+#shareIdea{
+    color: #ED7839;
+    margin: auto;
+    font: 18px 'Roboto';
+    font-weight: 700;
+}
+
+#culture{
+    margin: 35px 0px;
+    font-family: "Quicksand";
+    font-weight: 400;
+    color: #595959;
+    text-align: center;
+    height:39px;
+}
+
+#discussion{
+    border: 1px solid #ECECEC;
+    background: #FDF1EB;
+    color: #4E4E4E;
+    font-weight: 500px;
+    font-size: 20px;
+    font-family:"Roboto";
+    line-height: 25px;
+    margin-top: 50px;
+}
+
+#resum{
+    border: 1px solid #ECECEC;
+    background: #FDF1EB;
+    color: #4E4E4E;
+    font-weight: 500px;
+    font-size: 20px;
+    font-family:"Roboto";
+    line-height: 25px;
+}
+
+#loremResume{
+    margin: 35px 0px;
+    font-family: "Quicksand";
+    font-weight: 400;
+    color: #595959;
+    text-align:justify;
+    height:39px;
+}
+
+#userComment {
+
 }
