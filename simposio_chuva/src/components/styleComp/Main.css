@@ -1,8 +1,23 @@
+#mainCont{
+  display: grid;
+  grid-area:main;
+  grid-column: 1;
+  margin-top: 5px;
+  margin-left: 280px;
+}
+
 #videoMock{
-height: 439px;
-width: 784px;
+  display: grid;
+  height: 439px;
+  width: 784px;
 }
 
 #contentTitle{
-    color: #ED7839
+  color: #ED7839
+}
+
+#navBtn{
+  display: grid;
+  grid-column: 4;
+  grid-row:3;
 }

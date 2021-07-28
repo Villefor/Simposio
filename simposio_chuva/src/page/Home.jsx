@@ -1,6 +1,9 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import MainContent from '../components/MainContent';
+import Resume from '../components/Resume';
 import './stylePages/Home.css';
 import logo from '../img/Logo.png';
 import profile from '../img/profile.jpeg';
@@ -8,26 +11,27 @@ import profile from '../img/profile.jpeg';
 
 function Home() {
   const [email, setEmail] = React.useState();
-  const history = useHistory();
+  // const history = useHistory();
 
   React.useEffect(() => {
     const emailStore = localStorage.getItem('user');
     setEmail(emailStore.split('"')[3]);
   }, []);
 
-  const logoutFunc = () => {
-    localStorage.clear();
-    history.push('/');
-  };
+  // const logoutFunc = () => {
+  //   localStorage.clear();
+  //   history.push('/');
+  // };
 
   return (
-    <section>
+    <section id="container">
       <header className="header">
-        <h4 id="miniTitle">Anais do Simpósio Latino Americano de Ciência de Alimentos</h4>
-        <h1 id="pageTitle">Anais do 13° Simpósio Latino Americano de Ciência de Alimentos</h1>
-        <h6>ISSN: 1234-5678</h6>
+        <span id="miniTitle">Anais do Simpósio Latino Americano de Ciência de Alimentos</span>
+        <span id="pageTitle">Anais do 13° Simpósio Latino Americano de Ciência de Alimentos</span>
+        <span id="miniISSN">ISSN: 1234-5678</span>
 
         {/* <label htmlFor="language">Escolha o Idioma:</label> */}
+        <FontAwesomeIcon icon={faGlobe} id="globeIcon" />
         <select name="language" id="language">
           <option value="Português" selected>PT,BR</option>
           <option value="Inglês">EN</option>
@@ -46,15 +50,15 @@ function Home() {
           <figure>
             <img src={profile} alt="Profile" id="profilePhoto" />
           </figure>
-        </div>
 
-        <button
-          id="leaveBtn"
-          type="button"
-          onClick={logoutFunc}
-        >
-          Sair
-        </button>
+          {/* <button
+            id="leaveBtn"
+            type="button"
+            onClick={logoutFunc}
+          >
+            Sair
+          </button> */}
+        </div>
       </header>
 
       <aside id="aside">
@@ -62,17 +66,18 @@ function Home() {
         <figure>
           <img src={logo} alt="Logo" id="slacaLogo" />
         </figure>
-        <div>
+        <nav>
           <button type="button" className="asideBtn">Apresentação</button>
           <button type="button" className="asideBtn">Comitês</button>
           <button type="button" className="asideBtn">Autores</button>
           <button type="button" className="asideBtn">Eixos temáticos</button>
           <button type="button" className="asideBtn">Trabalhos</button>
           <button type="button" className="asideBtn">Contato</button>
-        </div>
+        </nav>
       </aside>
 
       <MainContent />
+      <Resume />
     </section>
   );
 }
