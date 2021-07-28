@@ -16,7 +16,7 @@
   grid-column: 1;
   grid-row: 1;
   margin-left: 220px;
-  width: 1146px;
+  width: 1fr;
   height: 70px;
 }
 
@@ -69,17 +69,21 @@
 
 #welcome{
   display:flex;
+  width: 300px;
   grid-column: 3/3;
   grid-row:1/4;
 }
 
+#welcomeMsg{
+  margin-left: 140px;
+}
+
 #profilePhoto{
   display:flex;
-  margin: -10px, 0px, 0px, 0px;
-  margin-right: 100px;
   width: 60px;
   height: 50px;
   border-radius: 100%;
+  margin-left: -40px;
 }
 
 #aside{
@@ -87,11 +91,9 @@
   display:grid;
   grid-column: 2;
   grid-row:2;
-  /* flex-direction: column; */
   position: fixed;
   background: #E5E5E5;
   width: 220px;
-  /* height:2500px; */
 }
 
 #slacaLogo{
@@ -99,7 +101,6 @@
   margin-left: -40px;
   margin-top: -34px;
   width: 220px;
-  /* height: 258px; */
 }
 
 #asideTitle{
@@ -128,4 +129,5 @@
   text-align: center;
   border: 1px solid #ECECEC;
   font-style:normal;
+  text-decoration: none;
 }

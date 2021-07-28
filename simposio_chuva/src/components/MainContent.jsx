@@ -13,16 +13,16 @@ function MainContent() {
           entre 09 e 15 anos, do município de Campinas/SP
         </p>
         <figure id="videoMock">
-          <img src={VideoMock} alt="Video mock" />
+          <img id="videoMockPhoto" src={VideoMock} alt="Video mock" />
         </figure>
       </main>
       <>
         <nav className="navBtn">
-          <button type="button" id="download">s </button>
+          <button type="button" id="download"> </button>
 
-          <button type="button" id="favorite"> s</button>
+          <button type="button" id="favorite"> </button>
 
-          <button type="button" id="doi">s </button>
+          <button type="button" id="doi"> </button>
         </nav>
 
         <p id="cite">COMO CITAR ESSE TRABALHO ?</p>
@@ -32,20 +32,24 @@ function MainContent() {
           <span>
             Tipo de Apresentação:
             {' '}
-            <bold>Pôster</bold>
+            <span className="bold">Pôster</span>
+            <br />
           </span>
           <span>
             Eixo Temático:
             {' '}
-            <bold>Alimentação e saúde (AS)</bold>
+            <span className="bold">Alimentação e saúde (AS)</span>
+            <br />
           </span>
           <span>
             Palavras-Chaves:
             {' '}
-            <bold>Alimentos funcionais, alimentação escolar</bold>
+            <span className="bold">Alimentos funcionais, alimentação escolar</span>
+            <br />
           </span>
           <p>
-            <bold>Autores:</bold>
+            <span className="bold">Autores:</span>
+            <br />
             {' '}
             Galileo Galilei¹
             {' '}

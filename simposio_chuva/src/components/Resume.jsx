@@ -133,7 +133,7 @@ function Resume() {
                   </p>
                   <span id="findOut">Descubra outros trabalhos!</span>
                   <button id="newTopic" onClick={createTopic} type="button"> </button>
-
+                  <p id="waitingFor">Aguardando feedback dos autores</p>
                 </>
               )}
           </div>

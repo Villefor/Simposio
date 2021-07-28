@@ -44,6 +44,7 @@
     grid-row:2;
     background: #FDF1EB;
     text-align: center;
+    border-radius: 10px;
 }
 
 .input-login{

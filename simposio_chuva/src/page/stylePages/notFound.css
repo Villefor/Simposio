@@ -1,0 +1,29 @@
+#notFoundSec{
+    display: grid;
+    grid-template-areas:
+    "image",
+    "msgBtn";
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    border: 1px solid black;
+    height:650px
+}
+
+#notFoundImg{
+    grid-column: 2/2;
+    grid-row: 2/2;
+    width: 700px;
+    height: 370px;
+    border: 1px solid black;
+}
+
+#msgAndBtn{
+    grid-column:2/2;
+    grid-row: 4/4;
+    margin-top: -100px;
+    margin:auto
+}
+
+#backBtn{
+    background:none;
+}
