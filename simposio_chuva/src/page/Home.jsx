@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import MainContent from '../components/MainContent';
 import Resume from '../components/Resume';
 import './stylePages/Home.css';
 import logo from '../img/Logo.png';
-import profile from '../img/image.svg';
+import profile from '../img/Img.svg';
 
 function Home() {
   const [email, setEmail] = React.useState();
@@ -26,7 +27,6 @@ function Home() {
         <span id="pageTitle">Anais do 13° Simpósio Latino Americano de Ciência de Alimentos</span>
         <span id="miniISSN">ISSN: 1234-5678</span>
 
-        {/* <label htmlFor="language">Escolha o Idioma:</label> */}
         <select name="language" id="language">
           <option value="Português" selected>PT,BR</option>
           <option value="Inglês">EN</option>
@@ -62,12 +62,14 @@ function Home() {
           <img src={logo} alt="Logo" id="slacaLogo" />
         </figure>
         <nav>
-          <button type="button" className="asideBtn">Apresentação</button>
-          <button type="button" className="asideBtn">Comitês</button>
-          <button type="button" className="asideBtn">Autores</button>
-          <button type="button" className="asideBtn">Eixos temáticos</button>
-          <button type="button" className="asideBtn">Trabalhos</button>
-          <button type="button" className="asideBtn">Contato</button>
+          <Link to="/notFound">
+            <button type="button" className="asideBtn">Apresentação</button>
+            <button type="button" className="asideBtn">Comitês</button>
+            <button type="button" className="asideBtn">Autores</button>
+            <button type="button" className="asideBtn">Eixos temáticos</button>
+            <button type="button" className="asideBtn">Trabalhos</button>
+            <button type="button" className="asideBtn">Contato</button>
+          </Link>
         </nav>
       </aside>
 
