@@ -29,25 +29,25 @@ function MainContent() {
 
         <aside id="detailsAside">
           <p id="details">Detalhes</p>
-          <span>
+          <span className="detailsParagraph">
             Tipo de Apresentação:
             {' '}
             <span className="bold">Pôster</span>
             <br />
           </span>
-          <span>
+          <span className="detailsParagraph">
             Eixo Temático:
             {' '}
             <span className="bold">Alimentação e saúde (AS)</span>
             <br />
           </span>
-          <span>
+          <span className="detailsParagraph">
             Palavras-Chaves:
             {' '}
             <span className="bold">Alimentos funcionais, alimentação escolar</span>
             <br />
           </span>
-          <p>
+          <p className="detailsParagraph">
             <span className="bold">Autores:</span>
             <br />
             {' '}
@@ -71,7 +71,7 @@ function MainContent() {
             {' '}
             <br />
           </p>
-          <p>
+          <p className="detailsParagraph">
             {' '}
             ¹Universidade Estadual de Campinas
             {' '}

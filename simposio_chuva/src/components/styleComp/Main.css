@@ -40,15 +40,14 @@
   margin-left: 40px;
 }
 
-#navBtn{
+.navBtn{
   grid-area: aside;
   grid-column: 4/4;
   grid-row: 1/1;
   height: 25px;
   width: 180px;
   margin-top: 10px;
-  margin-left: 100px;
-
+  margin-left: 50px;
 }
 
 #download{
@@ -104,11 +103,15 @@
   line-height: 25px;
 }
 
+.detailsParagraph{
+  line-height: 22px;
+}
+
 #detailsAside{
   grid-area: aside;
   grid-column: 4/4;
   grid-row: 2/2;
   margin-top: -478px;
-  margin-right: 270px;
-  width: 95%;
+  margin-right: 350px;
+  width: 70%;
 }
