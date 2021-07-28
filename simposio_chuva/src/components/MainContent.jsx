@@ -17,14 +17,12 @@ function MainContent() {
         </figure>
       </main>
       <>
-        <nav className="navBtn
-      "
-        >
-          <button type="button" id="download"> </button>
+        <nav className="navBtn">
+          <button type="button" id="download">s </button>
 
-          <button type="button" id="favorite"> </button>
+          <button type="button" id="favorite"> s</button>
 
-          <button type="button" id="doi"> </button>
+          <button type="button" id="doi">s </button>
         </nav>
 
         <p id="cite">COMO CITAR ESSE TRABALHO ?</p>
@@ -49,7 +47,41 @@ function MainContent() {
           <p>
             <bold>Autores:</bold>
             {' '}
-            Galileo Galilei
+            Galileo Galilei¹
+            {' '}
+            <br />
+            {' '}
+            Berta Lange de Morretes²
+            {' '}
+            <br />
+            {' '}
+            Isaac Newton³
+            {' '}
+            <br />
+            {' '}
+            Cesar Lattes¹
+            {' '}
+            <br />
+            {' '}
+            Stephen Hawking⁴
+            {' '}
+            <br />
+          </p>
+          <p>
+            {' '}
+            ¹Universidade Estadual de Campinas
+            {' '}
+            <br />
+            {' '}
+            ²Universidade de São Paulo
+            {' '}
+            <br />
+            {' '}
+            ³Instituto Nacional de Pesquisas Espaciais
+            {' '}
+            <br />
+            {' '}
+            ⁴Universidade Federal do Rio de Janeiro
             {' '}
             <br />
           </p>
@@ -58,5 +90,4 @@ function MainContent() {
     </section>
   );
 }
-
 export default MainContent;

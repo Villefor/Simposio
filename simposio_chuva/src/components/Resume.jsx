@@ -87,7 +87,7 @@ function Resume() {
             Etiam aliquam dictum nisl, vel aliquet enim accumsan sit amet.
             Donec finibus nisi tellus, ut viverra lorem vestibulum ut
           </span>
-          <button id="showBtn" type="button" onClick={handleSee}>  </button>
+          <button id="showBtn" type="button" onClick={handleSee}>Ver mais</button>
 
         </p>
       </section>
@@ -126,8 +126,13 @@ function Resume() {
               )
               : (
                 <>
-                  <h1>Enviado</h1>
-                  <button onClick={createTopic} type="button">Voltar</button>
+                  <p id="firstTopic">Seu tópico foi enviado com sucesso! :D</p>
+                  <p id="secondTopic">
+                    Agradecemos por sua contribuição, uma notificação será
+                    enviado ao seu email assim que seu tópico for respondido
+                  </p>
+                  <span id="findOut">Descubra outros trabalhos!</span>
+                  <button id="newTopic" onClick={createTopic} type="button"> </button>
 
                 </>
               )}

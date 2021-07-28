@@ -23,11 +23,10 @@ function Login() {
         <img className="logoImg" src={logoSla} alt="logo do evento" />
       </figure>
       <div className="buttons">
-        <h4 className="login-text">Login</h4>
+        <p className="login-text">Login</p>
         <input
           name="email"
           type="email"
-          data-testid="email-input"
           placeholder="Email"
           value={emailInput}
           autoComplete="none"
@@ -38,16 +37,14 @@ function Login() {
         <input
           name="password"
           type="password"
-          data-testid="password-input"
           minLength="6"
           placeholder="Senha"
           onChange={(e) => setPasswordInput(e.target.value)}
           className="input-login"
         />
-        <Link to="/home">
+        <Link className="link-home linkBtn" to="/home">
           <button
             type="button"
-            data-testid="login-submit-btn"
             disabled={!(checkEmail() && checkPass())}
             onClick={handleClick}
             className={`entrar-btn ${!(checkEmail() && checkPass())
