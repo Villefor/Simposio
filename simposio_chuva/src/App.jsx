@@ -4,6 +4,7 @@ import Home from './page/Home';
 import Login from './page/Login';
 import notFound from './page/notFound';
 import { Provider } from './context/Provider';
+import './index.css';
 
 function App() {
   return (
