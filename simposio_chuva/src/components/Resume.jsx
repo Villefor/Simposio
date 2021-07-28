@@ -2,14 +2,20 @@ import React from 'react';
 import icon1 from '../img/icone1.svg';
 import icon2 from '../img/icone2.svg';
 import icon3 from '../img/icone3.svg';
+import card from '../img/card.svg';
+import galoa from '../img/footer.svg';
 import './styleComp/Resume.css';
 
 function Resume() {
   const [email, setEmail] = React.useState();
   const [comments, setComment] = React.useState([]);
-  const [showComments, setShowComments] = React.useState(false);
-  // const [seeMore, setSeeMore] = React.useState(false);
+  const [showComments, setShowComments] = React.useState(true);
+  const [about, setAbout] = React.useState('');
   const [click, setClick] = React.useState([]);
+  const [initialRender, setInitialRender] = React.useState(true);
+  const [sendFeedback, setSendFeedback] = React.useState(true);
+
+  console.log(showComments);
 
   React.useEffect(() => {
     const emailStore = localStorage.getItem('user');
@@ -18,14 +24,22 @@ function Resume() {
 
   const handleChange = (event) => {
     setComment([event.target.value]);
+    setAbout([event.target.value]);
   };
 
   const handleClick = () => {
     setClick([...click, comments]);
+    setSendFeedback(!sendFeedback);
   };
 
   const showCom = () => {
     setShowComments(true);
+    setInitialRender(false);
+    setSendFeedback(!sendFeedback);
+  };
+
+  const createTopic = () => {
+    setInitialRender(true);
   };
 
   const handleSee = () => {
@@ -77,41 +91,63 @@ function Resume() {
 
         </p>
       </section>
-      <span id="discussion">
+      <span className="discussion">
         Discussões
       </span>
-      <span id="shareIdea">Compartilhe suas ideias ou dúvidas com os autores!</span>
-      <figure className="icons">
-        <img src={icon1} alt="icon" />
-        <img src={icon2} alt="icon" />
-        <img src={icon3} alt="icon" />
-      </figure>
-      <span id="culture">
-        Sabia que o maior estímulo no desenvolvimento científico e cultural
-        é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!
-
-      </span>
-      <input className="iconTopic" type="button" onClick={showCom} />
-      {showComments
-
+      {initialRender
         ? (
-          <div>
-            <span>Assunto</span>
-            <input id="commentEmail" type="text" placeholder={email} />
-            <span>Conteúdo</span>
-            <textarea id="commentContainer" type="text" onChange={handleChange} />
-            <button type="button" onClick={handleClick}>Enviar</button>
+          <>
+            <span id="shareIdea">Compartilhe suas ideias ou dúvidas com os autores!</span>
+            <figure className="icons">
+              <img src={icon1} alt="icon" />
+              <img src={icon2} alt="icon" />
+              <img src={icon3} alt="icon" />
+            </figure>
+            <span id="culture">
+              Sabia que o maior estímulo no desenvolvimento científico e cultural
+              é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!
 
-            {click.map((comment) => (
-              <section id="userComment">
-                <p>Tem uma dúvida ou sugestão ? Compartilhe seu feedback com os autores!</p>
-                <span>{email}</span>
-                <p>{comment}</p>
-              </section>
-            ))}
+            </span>
+            <input className="iconTopic" type="button" onClick={showCom} />
+          </>
+        ) : (
+          <div id="commentArea">
+            {!sendFeedback
+
+              ? (
+                <>
+                  <p id="suggestion">Tem uma dúvida ou sugestão ? Compartilhe seu feedback com os autores!</p>
+                  <span id="aboutBefore">Assunto</span>
+                  <input id="about" type="text" placeholder="Defina um tópico sucinto para notificar os autores..." onChange={handleChange} />
+                  <span id="aboutContent">Conteúdo</span>
+                  <textarea id="commentContainer" type="text" onChange={handleChange} />
+                  <button id="sendBtn" type="button" onClick={handleClick}>Enviar</button>
+                </>
+              )
+              : (
+                <>
+                  <h1>Enviado</h1>
+                  <button onClick={createTopic} type="button">Voltar</button>
+
+                </>
+              )}
           </div>
-        ) : <h1>seu tópico foi enviado para a casa do bruno</h1>}
-
+        )}
+      {click.map((comment) => (
+        <section id="userComment">
+          <br />
+          <span id="postAbout">{about}</span>
+          <br />
+          <span id="user">{email}</span>
+          <br />
+          <span className="aboutComment">Comentário</span>
+          <p id="postComment">{comment}</p>
+          <img src={card} alt="likes and answers" />
+        </section>
+      ))}
+      <footer>
+        <img src={galoa} alt="Galoá logo" />
+      </footer>
     </section>
   );
 }

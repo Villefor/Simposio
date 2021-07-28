@@ -10,14 +10,58 @@
   display: grid;
   height: 439px;
   width: 784px;
+  margin-right: 200px;
 }
 
 #contentTitle{
-  color: #ED7839
+  color: #ED7839;
+  width: 700;
+  height: 54px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  text-align:initial;
+  margin-left: 40px;
 }
 
 #navBtn{
   display: grid;
   grid-column: 4;
-  grid-row:3;
+  grid-row:1;
+}
+
+#download{
+  background: url(../../img/download.svg);
+  background-size:contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 29px
+}
+
+#favorite{
+  background: url(../../img/favorite.svg);
+  background-size:contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 29px
+}
+
+#doi{
+  background: url(../../img/doi.svg);
+  background-size:contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 29px
+}
+
+#details{
+  border: 1px solid #ECECEC;
+  background: #FDF1EB;
+  color: #4E4E4E;
+  font-weight: 500px;
+  font-size: 20px;
+  font-family:"Roboto";
+  line-height: 25px;
 }

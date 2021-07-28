@@ -1,13 +1,9 @@
 import React from 'react';
-// import { useHistory } from 'react-router-dom';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import MainContent from '../components/MainContent';
 import Resume from '../components/Resume';
 import './stylePages/Home.css';
 import logo from '../img/Logo.png';
-import profile from '../img/profile.jpeg';
-// import { ChuvaContext } from '../context/Provider';
+import profile from '../img/image.svg';
 
 function Home() {
   const [email, setEmail] = React.useState();
@@ -31,7 +27,6 @@ function Home() {
         <span id="miniISSN">ISSN: 1234-5678</span>
 
         {/* <label htmlFor="language">Escolha o Idioma:</label> */}
-        <FontAwesomeIcon icon={faGlobe} id="globeIcon" />
         <select name="language" id="language">
           <option value="Português" selected>PT,BR</option>
           <option value="Inglês">EN</option>

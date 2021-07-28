@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logoSla from '../img/logo.svg';
+import './stylePages/Login.css';
 
 function Login() {
   const [emailInput, setEmailInput] = React.useState('');
@@ -17,6 +19,7 @@ function Login() {
   return (
     <section className="login-container">
       <h2 className="title">13° Simpósio Latino Americano de Ciência de Alimentos</h2>
+      <img src={logoSla} alt="logo do evento" />
       <h4 className="login-text">Login</h4>
       <div className="buttons">
         <input
