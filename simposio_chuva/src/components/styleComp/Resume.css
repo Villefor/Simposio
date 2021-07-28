@@ -90,15 +90,12 @@
     display:none;
 }
 
-#showMor{
-
-}
-
 #showBtn{
     color:#ED7839;
     width: 100px;
     border: none;
-    margin:auto
+    margin: auto;
+    background: none
 }
 
 #suggestion{
@@ -219,4 +216,51 @@
     font-family:"Roboto";
     line-height: 18px;
     width: 980;
+}
+
+#firstTopic{
+    display: flex;
+    flex-direction: column;
+    color:#ED7839;
+    font-weight: 700px;
+    font-size: 18px;
+    font-family:"Roboto";
+    line-height: 18px;
+    width:1036px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#secondTopic{
+    height:20px;
+    width: 800;
+    font-family: "Quicksand";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 15px;
+    color: #595959;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#findOut{
+    height:20px;
+    width: 800;
+    font-family: "Quicksand";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 15px;
+    color:#ED7839;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#newTopic{
+  background: url(../../img/topic.svg);
+  background-size:contain;
+  background-repeat: no-repeat;
+  width: 435px;
+  height: 32px;
+  border: 1px solid black;
+  align-self: center;
 }

@@ -9,7 +9,6 @@
   grid-template-rows: 25%, 25%, 25%, 25%;
 }
 
-
 .header{
   background: #FDF1EB;
   display:grid;
@@ -26,9 +25,8 @@
   padding-left: 20px;
   line-height: 20px;
   font: 22px 'Roboto';
-  grid-column: 2/4;
-  grid-row:2;
-  margin-top: -17px;
+  grid-column: 1/1;
+  grid-row:2/2;
 }
 
 #miniTitle{
@@ -37,9 +35,8 @@
   line-height: 16px;
   font: 14px 'Roboto';
   fill: #725C5C;
-  grid-column: 2/4;
-  grid-row:1;
-  margin-top: 10px;
+  grid-column: 1/1;
+  grid-row:1/1;
 }
 
 #miniISSN{
@@ -47,21 +44,21 @@
   padding-left: 20px;
   line-height: 16px;
   font: 14px 'Roboto';
-  grid-column: 2/4;
-  margin-top: -30px;
+  grid-column: 1/1;
+  grid-row:3/3;
+  margin-top: -10px;
 }
 
 #language{
   display: flex;
-  grid-column: 4/5;
-  grid-row:2/4;
+  grid-column: 2/2;
+  grid-row:2/2;
   width: 97px;
   height: 34px;
   border-radius: 10px;
-  margin-top: -23px;
   text-align-last:center;
   background: url(../../img/idiomas.svg);
-  background-size:22px;
+  background-position-y: 4px;
   background-repeat: no-repeat;
 }
 
@@ -72,8 +69,7 @@
 
 #welcome{
   display:flex;
-  margin-right: -120px;
-  grid-column: 5/5;
+  grid-column: 3/3;
   grid-row:1/4;
 }
 

@@ -8,6 +8,17 @@
     grid-template-rows: 25%, 25%, 25%, 25%;
 }
 
+.login-text{
+    height:15px;
+    width: 540;
+    font-family: "Quicksand";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 15px;
+    color: #595959;
+    text-align: center;
+    border: 1px solid #ECECEC;
+}
 
 .title{
     color:#ED7839;
@@ -32,5 +43,37 @@
     grid-column:2;
     grid-row:2;
     background: #FDF1EB;
+    text-align: center;
+}
 
+.input-login{
+    height:20px;
+}
+
+.linkBtn{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* width: 150px;
+    height:33px; */
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.buttons > input {
+    margin: auto;
+    background: #FDF1EB;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.link-home > button {
+    margin: 10px;
+    width: 80px;
+}
+.link-home > button:hover{
+    background-color: #d8d8d8;
 }
