@@ -1,3 +1,14 @@
+.login-container{
+    display: grid;
+    grid-template-areas:
+    "title",
+    "logo",
+    "login";
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 25%, 25%, 25%, 25%;
+}
+
+
 .title{
     color:#ED7839;
     width: 1300px;
@@ -8,4 +19,18 @@
     border: 1px solid #ECECEC;
     height: 19px;
     text-align: center;
+    background: #FDF1EB;
+}
+.logoImg{
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.buttons {
+    grid-area: login;
+    grid-column:2;
+    grid-row:2;
+    background: #FDF1EB;
+
 }
