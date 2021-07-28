@@ -51,13 +51,6 @@
   margin-top: -30px;
 }
 
-#globeIcon{
-  grid-column: 3/4;
-  grid-row:2/4;
-  width: 22px;
-  margin-top: -15px;
-}
-
 #language{
   display: flex;
   grid-column: 4/5;
@@ -67,6 +60,9 @@
   border-radius: 10px;
   margin-top: -23px;
   text-align-last:center;
+  background: url(../../img/idiomas.svg);
+  background-size:22px;
+  background-repeat: no-repeat;
 }
 
 /* #leaveBtn{
@@ -127,6 +123,13 @@
   padding-top:-40 px;
   flex-direction:collumn;
   width: 220px;
-  height:30px;
+  height:33px;
   background:white;
+  font-size: 15px;
+  font-family: "Quicksand";
+  font-weight: 500;
+  color: #595959;
+  text-align: center;
+  border: 1px solid #ECECEC;
+  font-style:normal;
 }
