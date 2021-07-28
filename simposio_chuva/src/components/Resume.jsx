@@ -133,7 +133,6 @@ function Resume() {
                   </p>
                   <span id="findOut">Descubra outros trabalhos!</span>
                   <button id="newTopic" onClick={createTopic} type="button"> </button>
-                  <p id="waitingFor">Aguardando feedback dos autores</p>
                 </>
               )}
           </div>
@@ -150,7 +149,7 @@ function Resume() {
           <img src={card} alt="likes and answers" />
         </section>
       ))}
-      <footer>
+      <footer id="footer">
         <img src={galoa} alt="Galoá logo" />
       </footer>
     </section>

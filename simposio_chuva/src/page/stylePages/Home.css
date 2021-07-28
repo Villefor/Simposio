@@ -76,6 +76,12 @@
 
 #welcomeMsg{
   margin-left: 140px;
+  font-size: 15px;
+  font: 15px 'Roboto';
+  font-weight: 400;
+  width:72px;
+  height:20px
+
 }
 
 #profilePhoto{

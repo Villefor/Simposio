@@ -12,9 +12,10 @@
 #notFoundImg{
     grid-column: 2/2;
     grid-row: 2/2;
-    width: 700px;
+    width: 550px;
     height: 370px;
     border: 1px solid black;
+    margin-top: -50px;
 }
 
 #msgAndBtn{
@@ -24,6 +25,26 @@
     margin:auto
 }
 
+#comingSoon{
+    background: #FDF1EB;
+    color: #ED7839;
+    margin: auto;
+    font: 18px 'Roboto';
+    font-weight: 700;
+    margin-top:-20px;
+    margin-right: 150px
+}
+
 #backBtn{
-    background:none;
+    display:flex;
+    width: 145px;
+    height: 35px;
+    background: linear-gradient(180deg, #FFB354 50%, #EE7A3A 100%);
+    color: white;
+    border-radius: 0px 0px 4px 0px;
+    border: 1px solid #CCCCCC;
+    /* margin:auto; */
+    margin-top:15px;
+    margin-left: 60px;
+    text-decoration: none;
 }
