@@ -75,14 +75,35 @@
 }
 
 #loremResume{
-    margin: 35px 0px;
+    margin: 2px 0px;
     font-family: "Quicksand";
+    font-size: 14px;
     font-weight: 400;
+    line-height: 21px;
     color: #595959;
-    text-align:justify;
+    text-align:start;
     height:39px;
 }
 
+#showLess{
+    display:none;
+}
+
+#showMor{
+
+}
+
+#showBtn{
+
+}
+
 #userComment {
+    width: 500px;
+    height: 100px;
+
+}
+
+.resumeSection{
+    border: 1px solid #ECECEC;
 
 }
