@@ -7,19 +7,6 @@ import logo from '../img/Logo.png';
 import profile from '../img/Img.svg';
 
 function Home() {
-  const [email, setEmail] = React.useState();
-  // const history = useHistory();
-
-  React.useEffect(() => {
-    const emailStore = localStorage.getItem('user');
-    setEmail(emailStore.split('"')[3]);
-  }, []);
-
-  // const logoutFunc = () => {
-  //   localStorage.clear();
-  //   history.push('/');
-  // };
-
   return (
     <section id="container">
       <header className="header">
@@ -39,20 +26,12 @@ function Home() {
             Bem vindo,
             {' '}
             <br />
-            { email }
+            Adm_Chuva@Galoamail.com
           </p>
 
           <figure>
             <img src={profile} alt="Profile" id="profilePhoto" />
           </figure>
-
-          {/* <button
-            id="leaveBtn"
-            type="button"
-            onClick={logoutFunc}
-          >
-            Sair
-          </button> */}
         </div>
       </header>
 
