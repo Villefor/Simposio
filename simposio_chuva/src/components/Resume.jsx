@@ -156,7 +156,7 @@ function Resume() {
         </section>
       ))}
       <footer id="footer">
-        <img src={galoa} alt="Galoá logo" />
+        <img id="footLogo" src={galoa} alt="Galoá logo" />
       </footer>
     </section>
   );

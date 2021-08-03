@@ -55,8 +55,6 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    /* width: 150px;
-    height:33px; */
     border-radius: 4px;
     text-decoration: none;
 }
@@ -77,4 +75,78 @@
 }
 .link-home > button:hover{
     background-color: #d8d8d8;
+}
+
+@media only screen and (max-width: 500px) and (max-height: 750px) {
+    .login-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 730px;
+        border: 1px solid black;
+        width:500px
+    }
+    .login-text{
+        height:15px;
+        width: 20px;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 15px;
+        color: #595959;
+        text-align: center;
+        margin-left:120px;
+        border: 1px solid #ECECEC;
+    }
+
+    .title{
+        color:#ED7839;
+        width: 350px;
+        font-weight: 700px;
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        line-height: 18px;
+        border: 1px solid #ECECEC;
+        height: 19px;
+        text-align: center;
+        background: #FDF1EB;
+        margin-right: 100px;
+    }
+    .logoImg{
+        margin-top: 20px;
+        width: 230px;
+        margin-right: 80px;
+    }
+
+    .buttons {
+        background: #FDF1EB;
+        text-align: center;
+        border-radius: 10px;
+        width: 300px;
+        height: 180px;
+        margin-right: 80px;
+        margin-top: 25px;
+    }
+    .input-login{
+        height:100px;
+        width:250px
+    }
+
+    .linkBtn{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+
+    .buttons > input {
+        margin: auto;
+        background: #FDF1EB;
+    }
+
+    .link-home > button:hover{
+        background-color: #d8d8d8;
+    }
+
 }

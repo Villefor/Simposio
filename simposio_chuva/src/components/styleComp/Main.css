@@ -116,3 +116,115 @@
   margin-right: 350px;
   width: 70%;
 }
+
+@media only screen and (max-width: 500px) and (max-height: 750px) {
+  #mainSection {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    height: 730px;
+    width:420px
+  }
+
+  #mainCont{
+    margin-left: 200px;
+    width: 700px;
+  }
+
+  #videoMock{
+    height: 200px;
+    width: 20px;
+    margin-right: 150px;
+  }
+
+  #videoMockPhoto{
+      width: 420px;
+  }
+
+  #contentTitle{
+    color: #ED7839;
+    width: 420;
+    height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 25px;
+    text-align:initial;
+    margin-left: 45px;
+  }
+
+  .navBtn{
+    height: 25px;
+    width: 180px;
+    margin-top: 30px;
+    margin-left: 50px;
+  }
+
+  #download{
+    background: url(../../img/download.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 29px
+  }
+
+  #favorite{
+    background: url(../../img/favorite.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 29px
+  }
+
+  #doi{
+    background: url(../../img/doi.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 29px
+  }
+
+  .bold{
+    font-weight:bold;
+  }
+
+  #cite{
+    margin-top: 80px;
+    color: #ED7839;
+    width: 139;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    display: none;
+  }
+
+  #details{
+    border: 1px solid #ECECEC;
+    background: #FDF1EB;
+    color: #4E4E4E;
+    font-weight: 500px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 25px;
+  }
+
+  .detailsParagraph{
+    line-height: 22px;
+    text-align:justify
+  }
+
+  #detailsAside{
+    display: flex;
+    flex-direction:column;
+    margin-top: -478px;
+    margin-right: 350px;
+    width: 70%;
+    display:none
+  }
+
+}
