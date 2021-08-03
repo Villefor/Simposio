@@ -11,7 +11,7 @@
 .login-text{
     height:15px;
     width: 540;
-    font-family: "Quicksand";
+    font-family: 'Quicksand', sans-serif;
     font-size: 24px;
     font-weight: 500;
     line-height: 15px;
@@ -25,7 +25,7 @@
     width: 1300px;
     font-weight: 700px;
     font-size: 16px;
-    font-family:"Roboto";
+    font-family: 'Roboto', sans-serif;
     line-height: 18px;
     border: 1px solid #ECECEC;
     height: 19px;

@@ -14,7 +14,7 @@
 }
 
 #commentContainer {
-    width: 1025px;
+    width: 800x;
     height: 113px;
     border-radius: 3px;
 }
@@ -26,7 +26,8 @@
     width: 160px;
     height: 48px;
     border: none;
-    margin:auto
+    margin:auto;
+    margin-right: 470px
 }
 
 .icons{
@@ -34,7 +35,8 @@
     display:flex;
     justify-content:space-around;
     width: 300px;
-
+    margin-left: 250px;
+    margin-top: 20px
 }
 
 #shareIdea{
@@ -42,15 +44,18 @@
     margin: auto;
     font: 18px 'Roboto';
     font-weight: 700;
+    margin-top: 20px;
+    margin-left: 210px
 }
 
 #culture{
     margin: 35px 0px;
-    font-family: "Quicksand";
+    font-family: 'Quicksand', sans-serif;
     font-weight: 400;
     color: #595959;
     text-align: center;
     height:39px;
+    margin-right: 150px
 }
 
 .discussion{
@@ -59,7 +64,7 @@
     color: #4E4E4E;
     font-weight: 500px;
     font-size: 20px;
-    font-family:"Roboto";
+    font-family: 'Roboto', sans-serif;
     line-height: 25px;
     margin-top: 50px;
     margin-left: -110px;
@@ -72,13 +77,13 @@
     color: #4E4E4E;
     font-weight: 500px;
     font-size: 20px;
-    font-family:"Roboto";
+    font-family: 'Roboto', sans-serif;
     line-height: 25px;
 }
 
 #loremResume{
   margin: 2px 0px;
-  font-family: "Quicksand";
+  font-family: 'Quicksand', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -101,8 +106,8 @@
 
 #suggestion{
     height:18px;
-    width: 945px;
-    font-family: "Quicksand";
+    width: 500px;
+    font-family: 'Quicksand', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -110,22 +115,18 @@
     text-align:center;
 }
 
-#commentArea{
-    width: 1025px;
-    height: 505px;
-}
-
 #userComment {
     border: 1px solid #ECECEC;
-    height: 200px;
-    width: 1028px;
+    height: 260px;
+    width: 100%;
 }
 #commentArea{
     display:flex;
     flex-direction: column;
-    width: 1028px;
-    height: 148px;
+    width: 866px;
+    height: 300px;
     border: 1px solid #ECECEC;
+    margin-right: 100px;
 }
 
 #aboutBefore{
@@ -133,7 +134,7 @@
     width: 1020px;
     font-weight: 700px;
     font-size: 16px;
-    font-family:"Roboto";
+    font-family: 'Roboto', sans-serif;
     line-height: 18px;
     border: 1px solid #ECECEC;
     height: 19px;
@@ -144,7 +145,7 @@
     width: 1020px;
     font-weight: 700px;
     font-size: 16px;
-    font-family:"Roboto";
+    font-family: 'Roboto', sans-serif;
     line-height: 18px;
     border: 1px solid #ECECEC;
     height: 19px;
@@ -172,7 +173,7 @@
   color:#ED7839;
   font-weight: 700px;
   font-size: 16px;
-  font-family:"Roboto";
+  font-family: 'Roboto', sans-serif;
   line-height: 18px;
   border: 1px solid #ECECEC;
   height: 39px;
@@ -183,7 +184,7 @@
   height: 113px;
   font-weight: 400px;
   font-size: 14px;
-  font-family:"Roboto";
+  font-family: 'Roboto', sans-serif;
   line-height: 18px;
   width: 980;
 }
@@ -194,7 +195,7 @@
   color:#ED7839;
   font-weight: 700px;
   font-size: 16px;
-  font-family:"Roboto";
+  font-family: 'Roboto', sans-serif;
   line-height: 18px;
   border: 1px solid #ECECEC;
 }
@@ -202,7 +203,7 @@
 #user{
   height:15px;
   width: 540;
-  font-family: "Quicksand";
+  font-family: 'Quicksand', sans-serif;
   font-size: 12px;
   font-weight: 500;
   line-height: 15px;
@@ -215,7 +216,7 @@
     height: 113px;
     font-weight: 400px;
     font-size: 14px;
-    font-family:"Roboto";
+    font-family: 'Roboto', sans-serif;
     line-height: 18px;
     width: 980;
 }
@@ -226,16 +227,17 @@
     color:#ED7839;
     font-weight: 700px;
     font-size: 18px;
-    font-family:"Roboto";
+    font-family: 'Roboto', sans-serif;
     line-height: 18px;
     width:1036px;
     text-align: center;
+    margin-left:-100px
 }
 
 #secondTopic{
     height:20px;
     width: 800;
-    font-family: "Quicksand";
+    font-family: 'Quicksand', sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 15px;
@@ -246,12 +248,16 @@
 #findOut{
     height:20px;
     width: 800;
-    font-family: "Quicksand";
+    font-family: 'Quicksand', sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 15px;
     color:#ED7839;
     text-align: center;
+}
+
+#cardLogo{
+    height:30px
 }
 
 #newTopic{

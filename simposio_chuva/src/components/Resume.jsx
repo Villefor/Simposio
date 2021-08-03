@@ -7,28 +7,27 @@ import galoa from '../img/footer.svg';
 import './styleComp/Resume.css';
 
 function Resume() {
-  const [email, setEmail] = React.useState();
   const [comments, setComment] = React.useState([]);
   const [showComments, setShowComments] = React.useState(true);
-  const [about, setAbout] = React.useState('');
+  const [about, setAbout] = React.useState([]);
+  const [subject, setSubject] = React.useState([]);
   const [click, setClick] = React.useState([]);
   const [initialRender, setInitialRender] = React.useState(true);
   const [sendFeedback, setSendFeedback] = React.useState(true);
 
   console.log(showComments);
 
-  React.useEffect(() => {
-    const emailStore = localStorage.getItem('user');
-    setEmail(emailStore.split('"')[3]);
-  }, []);
+  const handleAbout = (event) => {
+    setAbout(event.target.value);
+  };
 
-  const handleChange = (event) => {
+  const handleTextArea = (event) => {
     setComment([event.target.value]);
-    setAbout([event.target.value]);
   };
 
   const handleClick = () => {
     setClick([...click, comments]);
+    setSubject([...subject, about]);
     setSendFeedback(!sendFeedback);
   };
 
@@ -40,6 +39,13 @@ function Resume() {
 
   const createTopic = () => {
     setInitialRender(true);
+  };
+
+  const verifyInput = () => {
+    if (about !== '' && comments !== '') {
+      return false;
+    }
+    return true;
   };
 
   const handleSee = () => {
@@ -118,10 +124,10 @@ function Resume() {
                 <>
                   <p id="suggestion">Tem uma dúvida ou sugestão ? Compartilhe seu feedback com os autores!</p>
                   <span id="aboutBefore">Assunto</span>
-                  <input id="about" type="text" placeholder="Defina um tópico sucinto para notificar os autores..." onChange={handleChange} />
+                  <input id="about" type="text" placeholder="Defina um tópico sucinto para notificar os autores..." onChange={handleAbout} />
                   <span id="aboutContent">Conteúdo</span>
-                  <textarea id="commentContainer" type="text" onChange={handleChange} />
-                  <button id="sendBtn" type="button" onClick={handleClick}>Enviar</button>
+                  <textarea id="commentContainer" type="text" onChange={handleTextArea} />
+                  <button id="sendBtn" type="button" onClick={handleClick} disabled={verifyInput()}>Enviar</button>
                 </>
               )
               : (
@@ -137,16 +143,16 @@ function Resume() {
               )}
           </div>
         )}
-      {click.map((comment) => (
+      {click.map((comment, index) => (
         <section id="userComment">
           <br />
-          <span id="postAbout">{about}</span>
+          <span id="postAbout">{subject[index]}</span>
           <br />
-          <span id="user">{email}</span>
+          <span id="user">Adm_Chuva@galoamail.com</span>
           <br />
           <span className="aboutComment">Comentário</span>
           <p id="postComment">{comment}</p>
-          <img src={card} alt="likes and answers" />
+          <img id="cardLogo" src={card} alt="likes and answers" />
         </section>
       ))}
       <footer id="footer">
