@@ -63,7 +63,7 @@ function MainContent() {
             {' '}
             <br />
             {' '}
-            Cesar Lattes¹
+            Cesar Lattes⁴
             {' '}
             <br />
             {' '}

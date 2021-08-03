@@ -136,3 +136,127 @@
   font-style:normal;
   text-decoration: none;
 }
+
+@media only screen and (max-width: 500px) and (max-height: 750px) {
+  #container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    height: 730px;
+    width:420px
+  }
+
+  .header{
+    display: flex;
+    flex-direction: column;
+    background: #FDF1EB;
+    width: 400px;
+    margin-top:320px;
+    padding-top:20px;
+    margin-right: 230px;
+    height: 200px;
+  }
+
+  #pageTitle{
+    color: #725C5C;
+    padding-left: 20px;
+    line-height: 20px;
+    font: 16px 'Roboto';
+    font-family: 'Roboto', sans-serif;
+  }
+
+  #miniTitle{
+    color: #725C5C;
+    padding-left: 20px;
+    line-height: 16px;
+    font: 14px 'Roboto';
+    font-family: 'Roboto', sans-serif;
+    fill: #725C5C;
+  }
+
+  #miniISSN{
+    color: #725C5C;
+    padding-left: 20px;
+    line-height: 16px;
+    font: 14px 'Roboto';
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+  }
+
+  #language{
+    display: flex;
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    text-align-last:center;
+    background: url(../../img/idiomas.svg);
+    background-position-y: 1px;
+    background-repeat: no-repeat;
+    margin-left: 260px;
+  }
+
+  #welcome{
+    display:flex;
+    width: 100px;
+  }
+
+  #welcomeMsg{
+    flex-direction: column;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    width:72px;
+    height:20px;
+    margin-right: 120px;
+  }
+
+  #profilePhoto{
+    display:flex;
+    width: 60px;
+    height: 50px;
+    border-radius: 100%;
+    margin-left: -40px;
+  }
+
+  #aside{
+    background: #E5E5E5;
+    width: 220px;
+    display:none
+  }
+
+  #slacaLogo{
+    /* margin-left: -40px; */
+    margin-top: -34px;
+    width: 190px;
+  }
+
+  #asideTitle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+    color: white;
+    width: 220px;
+    height:70px;
+  }
+
+  .asideBtn{
+    display:flex;
+    align-items: center;
+    padding-top:-40 px;
+    flex-direction:collumn;
+    width: 220px;
+    height:33px;
+    background:white;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: #595959;
+    text-align: center;
+    border: 1px solid #ECECEC;
+    font-style:normal;
+    text-decoration: none;
+  }
+}

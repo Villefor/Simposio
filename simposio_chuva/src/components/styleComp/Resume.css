@@ -273,3 +273,286 @@
   margin-left: -110px;
   width: 100%;
 }
+
+@media only screen and (max-width: 500px) and (max-height: 750px) {
+  #commentBox{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        height: 730px;
+        width:414px;
+        margin-top: -60px;
+        margin-left:-90px
+    }
+
+    #commentEmail{
+        width:100px;
+    }
+
+    #commentContainer {
+        width: 800x;
+        height: 113px;
+        border-radius: 3px;
+    }
+
+    .iconTopic{
+        background: url(../../img/topic.svg);
+        background-size:contain;
+        background-repeat: no-repeat;
+        width: 160px;
+        height: 48px;
+        border: none;
+        margin:auto;
+        margin-right: 70px
+    }
+
+    .icons{
+        margin:auto;
+        display:flex;
+        justify-content:space-around;
+        width: 300px;
+        margin-left: 100px;
+        margin-top: 20px
+    }
+
+    #shareIdea{
+        color: #ED7839;
+        margin: auto;
+        font: 18px 'Roboto';
+        font-weight: 700;
+        margin-top: 20px;
+        margin-left: 100px
+    }
+
+    #culture{
+        margin: 35px 0px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        color: #595959;
+        text-align: center;
+        height:100px;
+        margin-left: 200px;
+        display:none
+    }
+
+    .discussion{
+        border: 1px solid #ECECEC;
+        background: #FDF1EB;
+        color: #4E4E4E;
+        font-weight: 500px;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        line-height: 25px;
+        margin-top: 60px;
+        margin-left:100px;
+        width: 400px;
+    }
+
+    #resum{
+        border: 1px solid #ECECEC;
+        background: #FDF1EB;
+        color: #4E4E4E;
+        font-weight: 500px;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        line-height: 25px;
+    }
+
+    #loremResume{
+      margin: 2px 0px;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      color: #595959;
+      text-align:start;
+      height:100px;
+    }
+
+    #showLess{
+        display:none;
+    }
+
+    #showBtn{
+        color:#ED7839;
+        width: 100px;
+        border: none;
+        margin: auto;
+        background: none
+    }
+
+    #suggestion{
+        height:18px;
+        width: 400px;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        color: #595959;
+        text-align:center;
+    }
+
+    #userComment {
+        border: 1px solid #ECECEC;
+        height: 260px;
+        width: 400px;
+        margin-left: 100px;
+    }
+    #commentArea{
+        display:flex;
+        flex-direction: column;
+        width: 400px;
+        height: 300px;
+        border: 1px solid #ECECEC;
+        margin-left: 190px
+    }
+
+    #aboutBefore{
+        color:#ED7839;
+        width: 1020px;
+        font-weight: 700px;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        line-height: 18px;
+        border: 1px solid #ECECEC;
+        height: 19px;
+    }
+
+    #aboutContent{
+        color:#ED7839;
+        width: 380px;
+        font-weight: 700px;
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        line-height: 18px;
+        border: 1px solid #ECECEC;
+        height: 19px;
+    }
+
+    .resumeSection{
+        border: 1px solid #ECECEC;
+        margin-left: 110px;
+        width: 400;
+        margin-top: 70px;
+    }
+
+    #sendBtn{
+      display:flex;
+      width: 205px;
+      height: 31px;
+      background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+      color: white;
+      border-radius: 0px 0px 4px 0px;
+      border: 1px solid #CCCCCC;
+      margin:auto;
+    }
+
+    #postAbout{
+      color:#ED7839;
+      font-weight: 700px;
+      font-size: 16px;
+      font-family: 'Roboto', sans-serif;
+      line-height: 18px;
+      border: 1px solid #ECECEC;
+      height: 39px;
+    }
+
+    #postPAbout{
+      color:#4D4D4D;
+      height: 113px;
+      font-weight: 400px;
+      font-size: 14px;
+      font-family: 'Roboto', sans-serif;
+      line-height: 18px;
+      width: 980;
+    }
+
+    .aboutComment{
+      display: flex;
+      flex-direction: column;
+      color:#ED7839;
+      font-weight: 700px;
+      font-size: 16px;
+      font-family: 'Roboto', sans-serif;
+      line-height: 18px;
+      border: 1px solid #ECECEC;
+    }
+
+    #user{
+      height:15px;
+      width: 540;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 15px;
+      color: #595959;
+      text-align:start;
+    }
+
+    #postComment{
+        color:#4D4D4D;
+        height: 113px;
+        font-weight: 400px;
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        line-height: 18px;
+        width: 980;
+    }
+
+    #firstTopic{
+        display: flex;
+        flex-direction: column;
+        color:#ED7839;
+        font-weight: 700px;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        line-height: 18px;
+        width:400px;
+        text-align: center;
+        margin-left:1px
+    }
+
+    #secondTopic{
+        height:20px;
+        width: 800;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 15px;
+        color: #595959;
+        text-align: center;
+    }
+
+    #findOut{
+        height:20px;
+        width: 800;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 15px;
+        color:#ED7839;
+        text-align: center;
+    }
+
+    #cardLogo{
+        height:30px
+    }
+
+    #newTopic{
+        background: url(../../img/topic.svg);
+        background-size:contain;
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 30px;
+        margin:auto;
+    }
+
+    #footer{
+      width: 400px;
+      display:none
+    }
+    #footLogo{
+        display:none
+    }
+}

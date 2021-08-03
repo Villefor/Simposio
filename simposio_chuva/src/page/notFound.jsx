@@ -9,7 +9,7 @@ function notFound() {
       <img id="notFoundImg" src={not} alt="not Found" />
       <section id="msgAndBtn">
         <p id="comingSoon">Contéudo em possível produção!</p>
-        <Link to="/home">
+        <Link id="backLink" to="/home">
           <button id="backBtn" type="button">Voltar para página inicial</button>
         </Link>
       </section>
